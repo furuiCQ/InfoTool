@@ -5,7 +5,6 @@ import tkFileDialog
 import tkMessageBox
 from userInfo import *
 
-
 import docx
 from docx import Document
 from docxtpl import DocxTemplate
@@ -32,6 +31,8 @@ def showData():
     print path.get()
     inf = Info(path.get())
     inf.decodeInfo()
+    print '\n'.join(['%s:%s' % item for item in inf.__dict__.items()])  # 打印对象所有属性
+
     # 套模板
     # name = '寒冰'
     # template = "D:/pythonSpace/fristProject/src/asset/demo.docx"
