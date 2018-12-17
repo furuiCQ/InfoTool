@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09d4fd41-4b94-4000-b4af-fdfd8f009236" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/userInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/collectInfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/honor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/workExperience.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +18,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/fristProject$test.coverage" NAME="test Coverage Results" MODIFIED="1544589070274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/fristProject$ui.coverage" NAME="ui Coverage Results" MODIFIED="1544597488666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/fristProject$main.coverage" NAME="main Coverage Results" MODIFIED="1544777398781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/fristProject$main.coverage" NAME="main Coverage Results" MODIFIED="1545033273654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -30,50 +35,75 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
-              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-              <folding>
-                <element signature="e#25#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/userInfo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="92" column="36" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
-              <folding>
-                <element signature="e#1175#1351#0" />
-                <element signature="e#1360#1440#0" />
-                <element signature="e#1639#1715#0" />
-                <element signature="e#1600#1678#0" />
-                <element signature="e#1753#1841#0" />
-                <element signature="e#1848#1926#0" />
-                <element signature="e#1964#2041#0" />
-                <element signature="e#2095#2177#0" />
-                <element signature="e#2809#2886#0" />
-                <element signature="e#2931#3013#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/outInfo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5986711">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="844">
+                  <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+                  <folding>
+                    <element signature="e#25#62#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/collectInfo.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="445">
+                  <caret line="205" column="30" lean-forward="true" selection-start-line="205" selection-start-column="30" selection-end-line="205" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#24#49#0" expanded="true" />
+                    <element signature="e#783#1303#0" />
+                    <element signature="e#1893#2033#0" />
+                    <element signature="e#1999#2079#0" />
+                    <element signature="e#2124#2202#0" />
+                    <element signature="e#2246#2327#0" />
+                    <element signature="e#4353#5032#0" />
+                    <element signature="e#5116#5291#0" />
+                    <element signature="e#5205#5884#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/outInfo.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="475">
+                  <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/workExperience.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="247">
+                  <caret line="13" lean-forward="true" selection-end-line="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/honor.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="190">
+                  <caret line="10" column="20" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -87,6 +117,7 @@
       <find>  </find>
       <find>ce</find>
       <find>测试微信</find>
+      <find>教育背景</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,8 +130,13 @@
         <option value="$PROJECT_DIR$/src/ui.py" />
         <option value="$PROJECT_DIR$/src/class/info.py" />
         <option value="$PROJECT_DIR$/src/outInfo.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/userInfo.py" />
+        <option value="$PROJECT_DIR$/src/asset/WorkExperience.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/WorkExperience.py" />
+        <option value="$PROJECT_DIR$/src/workExperience.py" />
+        <option value="$PROJECT_DIR$/src/honor.py" />
+        <option value="$PROJECT_DIR$/src/collectInfo.py" />
       </list>
     </option>
   </component>
@@ -132,12 +168,6 @@
             </path>
             <path>
               <item name="fristProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fristProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="asset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fristProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -152,11 +182,11 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\pythonSpace\fristProject\src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\pythonSpace\fristProject\src\asset" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pythonSpace\fristProject\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -260,7 +290,9 @@
       <workItem from="1544510264067" duration="1917000" />
       <workItem from="1544521595489" duration="909000" />
       <workItem from="1544584956167" duration="12159000" />
-      <workItem from="1544765646066" duration="11464000" />
+      <workItem from="1544765646066" duration="11921000" />
+      <workItem from="1544781057312" duration="239000" />
+      <workItem from="1545011183541" duration="12767000" />
     </task>
     <task id="LOCAL-00001" summary="新增部分验证逻辑">
       <created>1544776703122</created>
@@ -273,7 +305,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31389000" />
+    <option name="totallyTimeSpent" value="44852000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -285,23 +317,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="522" y="24" width="1400" height="1000" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2597015" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14392324" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43764433" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5214592" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35515022" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32832617" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4978678" weight="0.32939914" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32939914" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.32939914" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4978678" weight="0.32939914" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.2811159" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49946696" weight="0.32832617" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -339,6 +371,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增部分验证逻辑" />
@@ -354,6 +400,11 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="workExp.title" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://C:/Python27/Lib/xml/dom/expatbuilder.py">
@@ -434,38 +485,58 @@
     <entry file="file://$PROJECT_DIR$/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/userInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-838">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/outInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        <state relative-caret-position="475">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="844">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#25#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/userInfo.py">
+    <entry file="file://$PROJECT_DIR$/src/workExperience.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="92" column="36" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/honor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/collectInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="205" column="30" lean-forward="true" selection-start-line="205" selection-start-column="30" selection-end-line="205" selection-end-column="30" />
           <folding>
-            <element signature="e#1175#1351#0" />
-            <element signature="e#1360#1440#0" />
-            <element signature="e#1639#1715#0" />
-            <element signature="e#1600#1678#0" />
-            <element signature="e#1753#1841#0" />
-            <element signature="e#1848#1926#0" />
-            <element signature="e#1964#2041#0" />
-            <element signature="e#2095#2177#0" />
-            <element signature="e#2809#2886#0" />
-            <element signature="e#2931#3013#0" />
+            <element signature="e#24#49#0" expanded="true" />
+            <element signature="e#783#1303#0" />
+            <element signature="e#1893#2033#0" />
+            <element signature="e#1999#2079#0" />
+            <element signature="e#2124#2202#0" />
+            <element signature="e#2246#2327#0" />
+            <element signature="e#4353#5032#0" />
+            <element signature="e#5116#5291#0" />
+            <element signature="e#5205#5884#0" />
           </folding>
         </state>
       </provider>
