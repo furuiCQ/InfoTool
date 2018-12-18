@@ -29,6 +29,23 @@ class CollectInfo:
         self.workExperience = []  # 实践经历
         self.schoolExperience = []  # 校园经历
         self.honors = []  # 荣誉
+        self.majorSkill = ""  # 专业技能
+        self.otherSkill = ""  # 其他技能和证书
+        self.hobby = ""  # 兴趣爱好
+        self.evaluation = ""  # 自我评价
+        # 判断是否为浮点数
+
+    def isNum2(self, value):
+        try:
+            x = float(value)  # 此处更改想判断的类型
+        except TypeError:
+            return False
+        except ValueError:
+            return False
+        except Exception as e:
+            return False
+        else:
+            return True
 
     def decodeInfo(self):
         temp = ""
@@ -65,6 +82,9 @@ class CollectInfo:
         self.getWorkExp(data)
         self.getSchoolExp(data)
         self.getHonors(data)
+        self.getMajorSkill(data)
+        self.getHobby(data)
+        self.getEvaluation(data)
 
     def getPropty(self, text, temp):
         text = text[text.find(temp):]
@@ -195,8 +215,8 @@ class CollectInfo:
         self.getSchoolListNum(start)
 
     def getHonorData(self, end):
-        print "====="
-        print end
+        # print "====="
+        # print end
         if end.find('时间') != -1:
             return end[0:end.find('时间')]
         else:
@@ -220,3 +240,48 @@ class CollectInfo:
     def getHonors(self, text):
         start = self.getWorkData(text, '奖励及荣誉', '七、考取证书')
         self.getHonorListNumb(start)
+
+    def getMajorSkill(self, text):
+        start = self.getWorkData(text, '考取证书', '八、兴趣爱好')
+        ct4 = self.getPropty(start, '英语四级分数')
+        ct6 = self.getPropty(start, '英语六级分数')
+        clevel = self.getPropty(start, '计算机级别')
+        mj = self.getPropty(start, '职业资格')
+        jz = self.getPropty(start, '驾照')
+        pth = self.getPropty(start, '普通话')
+        other = self.getPropty(start, '其他')
+        temp = ""
+        if self.isNum2(ct4):
+            if int(ct4) > 425:
+                temp += "英语四级证书"
+
+        if self.isNum2(ct6):
+            if int(ct6) > 425:
+                temp += "英语六级证书,"
+
+        if '无' not in clevel:
+            temp += clevel + ","
+
+        if '无' not in mj:
+            temp += mj + ","
+
+        if '无' not in jz:
+            temp += jz + ","
+
+        if '无' not in pth:
+            temp += pth + ","
+
+        if '无' not in other:
+            temp += other + ","
+
+        self.otherSkill = temp.replace('\n', '')
+
+    def getHobby(self, text):
+        start = self.getWorkData(text, '八、兴趣爱好', '九、自我评价')
+        self.hobby = start.split("&")[2]
+        # print self.hobby
+
+    def getEvaluation(self, text):
+        start = text[text.find('九、自我评价'):]
+        self.evaluation = start.split("&")[1]
+        # print self.evaluation
